@@ -106,8 +106,64 @@
 			}
 		</script>
 		<meta name="viewport" content="width=device-width" />
-		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-
+		<style amp-boilerplate>
+			body {
+				-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+				-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+				-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+				animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			}
+			@-webkit-keyframes -amp-start {
+				from {
+					visibility: hidden;
+				}
+				to {
+					visibility: visible;
+				}
+			}
+			@-moz-keyframes -amp-start {
+				from {
+					visibility: hidden;
+				}
+				to {
+					visibility: visible;
+				}
+			}
+			@-ms-keyframes -amp-start {
+				from {
+					visibility: hidden;
+				}
+				to {
+					visibility: visible;
+				}
+			}
+			@-o-keyframes -amp-start {
+				from {
+					visibility: hidden;
+				}
+				to {
+					visibility: visible;
+				}
+			}
+			@keyframes -amp-start {
+				from {
+					visibility: hidden;
+				}
+				to {
+					visibility: visible;
+				}
+			}
+		</style>
+		<noscript
+			><style amp-boilerplate>
+				body {
+					-webkit-animation: none;
+					-moz-animation: none;
+					-ms-animation: none;
+					animation: none;
+				}
+			</style></noscript
+		>
 
 		<style amp-custom>
 			/*! CSS Used from: https://static.monitordomercado.com.br/css/style.css?v=v4.4.0 */
@@ -1952,10 +2008,20 @@
 				}
 			}
 		</style>
-
 	</head>
 	<body>
-
+		<amp-analytics type="comscore">
+			<script type="application/json">
+				{
+					"vars": {
+						"c2": "3000033"
+					},
+					"extraUrlParams": {
+						"comscorekw": "amp"
+					}
+				}
+			</script>
+		</amp-analytics>
 		<amp-analytics type="googleanalytics" id="analytics_terra">
 			<script type="application/json">
 				{
@@ -1979,18 +2045,6 @@
 								"cd49": "true"
 							}
 						}
-					}
-				}
-			</script>
-		</amp-analytics>
-		<amp-analytics type="comscore">
-			<script type="application/json">
-				{
-					"vars": {
-						"c2": "3000033"
-					},
-					"extraUrlParams": {
-						"comscorekw": "amp"
 					}
 				}
 			</script>
@@ -2359,7 +2413,7 @@
 			</div>
 		</header>
 		<main>
-<!-- 			<div class="banner-mobile">
+			<!-- <div class="banner-mobile">
 				<amp-ad
 					width="390"
 					height="300"
@@ -2403,16 +2457,16 @@
 								<p class="noticia-link">&gt;</p>
 								<a href="/content" class="noticia-link">Notícia</a>
 								<p class="noticia-link"></p>
-								<a href="#" class="noticia-link atual"
+								<!-- <a href="#" class="noticia-link atual"
 									>{{ truncate .Record.Title 25 "..."}}</a
-								>
+								> -->
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-10 noticia-container mx-auto">
-						<section class="card-box">
+						<!-- <section class="card-box">
 							<div class="blog-post-content">
 								<h1 class="h1 blog-post-title">
 									{{ html .Record.TitleWithCompany }}
@@ -2517,7 +2571,7 @@
 
 								{{end}}
 							</div>
-						</section>
+						</section> -->
 						<div class="text-center"></div>
 						<br />
 						<div class="small-line-horizontal-divider"></div>
@@ -2882,13 +2936,13 @@
 			iCvzNMkxm2zhNTa1Eb8V0h03xvryJ8Gf/al4CAkn/uK7/eeJE53SLuSTWHxSAcAnZb2yzpP4DeZE
 			YSSVtTMvn1AAkKeRXR+lvaHU6HaPLDyAz9DlLXG9ga0lob2FkZdUs0k9BjKuUzFNSLqVZi/8uYrm
 			Gi9Ci5hLJgFIrihETrcuBnqT8ugNHUWEpz4hTBPCySGEOGSYgBvOPpHyfKAKdQAAAAA="
-			alt="Realtime Monitor Banner"
+								alt="Realtime Monitor Banner"
 						/></a>
 						<div class="small-line-horizontal-divider"></div>
 						<div class="d-flex justify-content-center"></div>
 						<div class="generic-container d-flex flex-column">
 							<div class="d-flex flex-column gap-4">
-								{{ .Ctx.GetTemplateHTML "newsMostReadBlock" }}
+								<!-- {{ .Ctx.GetTemplateHTML "newsMostReadBlock" }} -->
 							</div>
 						</div>
 					</div>
